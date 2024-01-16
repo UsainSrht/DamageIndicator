@@ -1,0 +1,31 @@
+
+
+
+
+
+default_indicator:
+  text: "<red><damage:'en-US':'#,###.##'>♥"
+  # CENTER, LEFT, RIGHT
+  alignment: CENTER
+  # alpha, red, green, blue
+  background_color: 0, 255, 0, 0
+  # if true, overrides background_color
+  default_background: false
+  line_width: 50
+  # see through blocks
+  see_through: true
+  # text shadow behind characters, not the entity shadow
+  shadowed: true
+  text_opacity: 1
+
+
+command:
+  name: damageindicator
+  description: "Damage Indicator toggle command"
+  usage: "/damageindicator"
+  permission: "damageindicator.toggle"
+  permission_message: "<red>You don't have permission to use this command!"
+  permission_sounds:
+    - "entity.villager.no"
+  aliases:
+    - "di"
